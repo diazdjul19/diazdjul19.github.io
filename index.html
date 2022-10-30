@@ -57,7 +57,12 @@
                 </div>
 
                 <div class="home__img">    
-                    <img src="assets/img/circle-cropped.png" alt="" style="width: 100%; height: auto;">
+                    <!-- <img src="assets/img/circle-cropped.png" alt="" style="width: 100%; height: auto;"> -->
+                    <img src="assets/img/with-laptop.png" alt="" style="width: 100%;
+                    height: auto;
+                    position: relative;
+                    top: 30px;
+                    border-radius: 25px;">
                 </div>
             </section>
 
@@ -67,12 +72,12 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/foto-diaz-cakep.png" alt="">
+                        <img src="assets/img/tjakep2.png" alt="">
                     </div>
                     
                     <div>
                         <h2 class="about__subtitle">Hi, I'm Diaz</h2>
-                        <p class="about__text">Hello, I'm Diaz Djuliansyah, I'm a Freelancer web developer domiciled in Bekasi City, I have been in programming for 2 years, love to learn and find out new things.</p>           
+                        <p class="about__text">Hello, I am Diaz Djuliansyah, a software engineer with experience in the Web Developer field, I have more than 1 year of experience working in the software engineer field.</p>           
                     </div>                                   
                 </div>
             </section>
@@ -157,7 +162,13 @@
                 <a style="color: #fff;" href="mailto:diazdjul19@gmail.com">diazdjul19@gmail.com</a>
             </div>
 
-            <p>&#169; 2020 copyright all right reserved</p>
+            <p id="year"></p>
+            <script>
+                var year = new Date().getFullYear();
+                document.getElementById("year").innerHTML = "&#169; " + year + " All Right Reserved";
+            </script>
+
+            
         </footer>
 
 
